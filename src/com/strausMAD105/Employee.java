@@ -88,7 +88,7 @@ public class Employee {
 
     private NumberFormat nf = NumberFormat.getCurrencyInstance();// -------- formatter object for currency display ----
 
-    private double earned(boolean salary, double employeeShift, double hrsIn, double payRate){
+    private double calculate(boolean salary, double employeeShift, double hrsIn, double payRate){
 
         if (salary){// --------- Salaried employee
             return payRate * hrsIn;
@@ -122,7 +122,7 @@ public class Employee {
         System.out.println("Salaried: " + isSalary());
         System.out.println("Hourly Rate: $" + getPayRate());
         System.out.println("Hours worked: " + getHrsIn());
-        System.out.println("Pay for the week: " + nf.format(earned(salary, employeeShift, hrsIn, payRate)));
+        System.out.println("Pay for the week: " + nf.format(calculate(salary, employeeShift, hrsIn, payRate)));
         System.out.print("\n");
 
     }//--------- END of class method displayAll

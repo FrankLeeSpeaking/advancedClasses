@@ -6,7 +6,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
 
         List<Employee> employees = new ArrayList<>();// ---------------- Create list of employee -----------
         employees.add(new Employee("John Doe", PositionTitle.TECHNICAL, true, 26.25, 1, "Jan. 2, 1984", 45));
